@@ -8,7 +8,7 @@ user = bot.get_me().username
 @bot.message_handler(commands=['start'])
 def start(m):
   # start text
-  text = 'ســـلام.\nخــوش اومــدے \n براے سـاخت ایـمیل  {}.\nCommands: \n/newmail \nبراے مشـاهدہ صندق دریافت ایمیل\n/mails \nchannel: @xt_robo.format(user)
+  text = 'Hi.\nWelcome to {}.\nCommands: \n/newmail: For making a new Email.\n/mails: For reading new emails.'.format(user)
   bot.send_message(m.chat.id, text)
 @bot.message_handler(commands=['newmail'])
 def newmail(m):
