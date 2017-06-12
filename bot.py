@@ -4,7 +4,6 @@ r = redis.Redis('localhost')
 from tempmail import TempMail
 token = '282072697:AAHOF0Bfj7WsB47bTfemGfyQHUYf2AKNu74'
 bot = telebot.TeleBot(token)
-Channel = @xt_robo
 user = @bot.message_handler(commands=['start'])
 def start(m):
   # start text
